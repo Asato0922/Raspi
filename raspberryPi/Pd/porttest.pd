@@ -1,0 +1,10 @@
+#N canvas 163 171 450 300 12;
+#X obj 8 250 print RAW;
+#X obj 266 23, f 19;
+#X msg 18 22 connect 127.0.0.1 8002;
+#X msg 176 73 hello;
+#X obj 28 138 netsend -u;
+#X obj 10 209 netreceive -u 8001;
+#X connect 2 0 4 0;
+#X connect 3 0 4 0;
+#X connect 5 0 0 0;
